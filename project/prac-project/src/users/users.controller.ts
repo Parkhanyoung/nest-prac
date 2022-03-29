@@ -9,6 +9,11 @@ import { UsersService } from './users.service';
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
+  @Get()
+  getUser() {
+    return 'hello';
+  }
+
   @Post()
   async createUser(@Body() dto: CreateUsersDto): Promise<void> {
     const { name, email, password } = dto;
