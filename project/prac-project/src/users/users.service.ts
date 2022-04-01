@@ -24,7 +24,7 @@ export class UsersService {
     name: string,
     email: string,
     password: string,
-    signupVerifyToken: string
+    signupVerifyToken: string,
   ) {
     return;
   }
